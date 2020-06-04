@@ -324,20 +324,22 @@ public class RegisterUIController implements Initializable {
         fc.getExtensionFilters().addAll(
         new ExtensionFilter("PDF File", "*.pdf"));
         File selectedFile = fc.showOpenDialog(null);
-        if (selectedFile.exists()) {
-        s_file = selectedFile.getAbsolutePath();
-        newPath = s_file.replace('\\', '/');
-        System.out.println("FILE: "+s_file);
-        System.out.println("New FILE: "+newPath);
-        System.out.println("file size: "+ selectedFile.length());
-        listview.getItems().add(selectedFile.getName());
-        }
-        else {
-        registerStatusLabel.setText( "Invalid File Format. Upload only pdf's");
+        if (null != selectedFile) {
+            if (selectedFile.exists()) {
+                s_file = selectedFile.getAbsolutePath();
+                newPath = s_file.replace('\\', '/');
+                System.out.println("FILE: "+s_file);
+                System.out.println("New FILE: "+newPath);
+                System.out.println("file size: "+ selectedFile.length());
+                listview.getItems().add(selectedFile.getName());
+            }
+            else {
+                registerStatusLabel.setText( "Invalid File Format. Upload only pdf's");
 
+            }
         }
-        
-        
+
+
     }
     
     

@@ -19,7 +19,7 @@
             <Image url="@../../images/logo.jpg" />
          </image>
       </ImageView>
-      <Pane layoutX="7.0" layoutY="84.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1000.0" style="-fx-background-color: #0a2338;">
+      <Pane layoutX="-2.0" layoutY="93.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="707.0" prefWidth="1007.0" style="-fx-background-color: #0a2338;">
          <children>
             <JFXButton fx:id="btnViewPending" alignment="BOTTOM_CENTER" buttonType="RAISED" contentDisplay="BOTTOM" layoutX="68.0" layoutY="189.0" onAction="#handleViewPendingApplicants" prefHeight="250.0" prefWidth="262.0" ripplerFill="WHITE" style="-fx-background-color: white;" styleClass="option" stylesheets="@admindashboard.css" text="View pending Applicants" textFill="#166aaf">
                <font>
